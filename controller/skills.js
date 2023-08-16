@@ -7,13 +7,13 @@ module.exports = {
 }
 
 function show(req, res) {
-    res.render('skill/show', {
-        skill: Skill.getOne(req.params.id)
+    res.render('skills/show', {
+        skills: Skill.getOne(req.params.id)
     });
 }
 
 function index(req, res) {
     res.render('skills/index', {
-        skill: Skill.getAll()
+        skills: Skill.getAll()
     });
 }
